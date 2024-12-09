@@ -20,11 +20,11 @@ This project can be a starting point for beginners who want to learn about LLMs.
    cd pdf-summarizer-chatbot  
 2.  Install dependencies
    ```
-   pip install -r requirements
+   pip install -r requirements.txt
    ```
 3. Set Up Replicate API Key
-   Obtain your Replicate API key from replicate.com and add it to `secrets.toml` file in the `.steamlit` folder:
-   ```secrets.toml
+   Obtain your Replicate API key from [replicate.com](replicate.com) and add it to `secrets.toml` file in the `.streamlit` folder:
+   ```
    REPLICATE_API_TOKEN = "INSERT_YOUR_REPLICATE_API_TOKEN_HERE"
 4. Run the application
    ```
