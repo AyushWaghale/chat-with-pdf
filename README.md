@@ -13,18 +13,6 @@ This project can be a starting point for beginners who want to learn about LLMs.
 - **Themes**: Support light and dark themes for user convenience.
 - **API Integration**: Utilizes the Replicate API for seamless communication with the LLM backend.
 
-## Tech Stack
-1. Python
-  - Core language for the application.
-2. PyPDF2
-  - Library for extracting text from PDF documents.
-3. Streamlit
-  - Framework for building an interactive web-based UI.
-4. Replicate API
-  - Enables integration with Llama 2 for generating summaries.
-5. Llama 2
-  - A powerful Large Language Model optimized for various NLP tasks.
-
 ## Getting Started
 1. Clone the repository
    ```
