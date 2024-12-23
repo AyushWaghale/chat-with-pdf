@@ -1,5 +1,5 @@
 # PDF Summarizer and Chatbot using LLaMa2 in Streamlit
-![Screenshot (477)](https://github.com/user-attachments/assets/608f19d2-06f5-4499-b881-d1b21b16b1e6)
+![Screenshot (481)](https://github.com/user-attachments/assets/f5c8a6d0-e9db-4113-a6d2-a44e478b0845)
 
 ## Project Overview
 The PDF Summarizer Chatbot is a user-friendly application that allows you to upload PDF documents and receive concise summaries generated using advanced Large Language Models (LLMs). This project leverages the power of Natural Language Processing (NLP) to extract meaningful insights from textual data, making document analysis faster and more efficient.
