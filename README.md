@@ -17,7 +17,7 @@ This project can be a starting point for beginners who want to learn about LLMs.
 ## Getting Started
 1. Clone the repository
    ```
-   git clone https://github.com/haryanto-py/pdf-summarizer-chatbot.git
+   git clone https://github.com/0xichikawa/PDF-summarizer-chatbot-using-LLaMa2.git
    cd pdf-summarizer-chatbot  
 2.  Install dependencies
    ```
