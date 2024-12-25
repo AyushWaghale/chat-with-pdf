@@ -79,18 +79,22 @@ with st.sidebar:
 
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
+
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [{"role": "assistant", "content": "Upload a PDF file from the sidebar to get started."}]
+
 
 # Display or clear chat messages
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
 
+
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": "Upload a PDF file from the sidebar to get started."}]
     st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
+
 
 def generate_llama2_response(text, question):
     string_dialogue = "You are a helpful assistant. You do not respond as 'User' or pretend to be 'User'. You only respond once as 'Assistant'."
@@ -104,6 +108,7 @@ def generate_llama2_response(text, question):
                            input={"prompt" : prompt,
                                   "temperature":0.1, "top_p":0.9, "max_length":2000, "repetition_penalty":1})
     return output
+
 
 # Generate a new response if last message is not from assistant
 if pdf_text:
