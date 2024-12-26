@@ -67,18 +67,18 @@ with st.sidebar:
 
     uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
     pdf_text = ""
+    
     if uploaded_file:
         with st.spinner("Extracting text from PDF..."):
             pdf_text = extract_text_from_pdf(uploaded_file)
         st.success("PDF uploaded and text extracted!")
 
     st.markdown('''
-        Developed by Haryanto Hidayat - 2024  
-        Visit my GitHub profile <a href="https://github.com/haryanto-py" style="color:white; background-color:#3187A2; padding:3px 5px; text-decoration:none; border-radius:5px;">here</a>
+        Developed by Ichikawa Hiroshi - 2024  
+        Visit my GitHub profile <a href="https://github.com/0xichikawa" style="color:white; background-color:#3187A2; padding:3px 5px; text-decoration:none; border-radius:5px;">here</a>
         ''', unsafe_allow_html=True)
 
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
-
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
