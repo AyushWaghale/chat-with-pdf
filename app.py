@@ -26,6 +26,7 @@ if "themes" not in ms:
                           "button_face": "🌞"},
                           }
 
+
 def ChangeTheme():
     previous_theme = ms.themes["current_theme"]
     tdict = ms.themes["light"] if ms.themes["current_theme"] == "light" else ms.themes["dark"]
@@ -43,6 +44,7 @@ if ms.themes["refreshed"] == False:
     ms.themes["refreshed"] = True
     st.rerun()
 
+
 # Function to extract pdf to text format
 def extract_text_from_pdf(pdf_file):
     """Extract text from an uploaded PDF file."""
@@ -51,6 +53,7 @@ def extract_text_from_pdf(pdf_file):
     for page in reader.pages:
         text += page.extract_text()
     return text
+
 
 # Replicate Credentials
 with st.sidebar:
@@ -77,6 +80,7 @@ with st.sidebar:
         Developed by Ichikawa Hiroshi - 2024  
         Visit my GitHub profile <a href="https://github.com/0xichikawa" style="color:white; background-color:#3187A2; padding:3px 5px; text-decoration:none; border-radius:5px;">here</a>
         ''', unsafe_allow_html=True)
+
 
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
